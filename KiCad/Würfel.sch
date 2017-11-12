@@ -1,0 +1,580 @@
+EESchema Schematic File Version 3
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:usb
+LIBS:user_74
+LIBS:user_arduino
+LIBS:user_audio
+LIBS:user_conn
+LIBS:user_device
+LIBS:user_display
+LIBS:user_FM
+LIBS:user_schalter
+LIBS:user_text
+LIBS:user_transformer
+LIBS:user_transistors
+LIBS:user_symbols
+LIBS:analog_devices
+LIBS:stm32
+LIBS:switches
+LIBS:user_switch
+LIBS:Würfel-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Würfel für KiCad-Workshop"
+Date "2017-11-12"
+Rev "-"
+Comp "Caroline Brix"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_02x03_Odd_Even J2
+U 1 1 59FADABC
+P 2500 6750
+F 0 "J2" H 2550 6950 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 2550 6550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2500 6750 50  0001 C CNN
+F 3 "" H 2500 6750 50  0001 C CNN
+	1    2500 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 6550 0    60   Input ~ 0
+MISO
+Text GLabel 2050 6750 0    60   Input ~ 0
+SCK
+Text GLabel 2050 6950 0    60   Input ~ 0
+RESET
+Text GLabel 3050 6550 2    60   Input ~ 0
+VCC
+Text GLabel 3050 6750 2    60   Input ~ 0
+MOSI
+$Comp
+L GND #PWR01
+U 1 1 59FADB9A
+P 2950 7000
+F 0 "#PWR01" H 2950 6750 50  0001 C CNN
+F 1 "GND" H 2950 6850 50  0000 C CNN
+F 2 "" H 2950 7000 50  0001 C CNN
+F 3 "" H 2950 7000 50  0001 C CNN
+	1    2950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6650 2950 6650
+Wire Wire Line
+	2950 6650 2950 6550
+Wire Wire Line
+	2950 6550 3050 6550
+Wire Wire Line
+	2800 6750 3050 6750
+Wire Wire Line
+	2800 6850 2950 6850
+Wire Wire Line
+	2950 6850 2950 7000
+Wire Wire Line
+	2300 6650 2200 6650
+Wire Wire Line
+	2200 6650 2200 6550
+Wire Wire Line
+	2200 6550 2050 6550
+Wire Wire Line
+	2300 6750 2050 6750
+Wire Wire Line
+	2300 6850 2200 6850
+Wire Wire Line
+	2200 6850 2200 6950
+Wire Wire Line
+	2200 6950 2050 6950
+Text GLabel 6150 2800 2    60   Input ~ 0
+RESET
+Wire Wire Line
+	5850 2800 6150 2800
+Text GLabel 6500 2100 2    60   Input ~ 0
+SCK
+Text GLabel 6500 1950 2    60   Input ~ 0
+MISO
+Text GLabel 6500 1800 2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	6350 2100 6500 2100
+Wire Wire Line
+	6200 1950 6500 1950
+Wire Wire Line
+	6050 1800 6500 1800
+$Comp
+L USB_B_WE J1
+U 1 1 59FADF68
+P 1950 2500
+F 0 "J1" H 1750 2950 50  0000 L CNN
+F 1 "USB_B_WE" H 1750 2850 50  0000 L CNN
+F 2 "user_USB:USB_B_THT_WE" H 2100 2450 50  0001 C CNN
+F 3 "" H 2100 2450 50  0001 C CNN
+	1    1950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2300 3150 2300
+Wire Wire Line
+	1950 2900 1950 3050
+$Comp
+L GND #PWR02
+U 1 1 59FAE01C
+P 1950 3050
+F 0 "#PWR02" H 1950 2800 50  0001 C CNN
+F 1 "GND" H 1950 2900 50  0000 C CNN
+F 2 "" H 1950 3050 50  0001 C CNN
+F 3 "" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2250 2500
+NoConn ~ 2250 2600
+$Comp
+L GND #PWR03
+U 1 1 59FAE23A
+P 2950 3050
+F 0 "#PWR03" H 2950 2800 50  0001 C CNN
+F 1 "GND" H 2950 2900 50  0000 C CNN
+F 2 "" H 2950 3050 50  0001 C CNN
+F 3 "" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Wuerfel_Bezeichner U2
+U 1 1 59FB7114
+P 4850 6350
+F 0 "U2" H 4850 6850 60  0001 C CNN
+F 1 "Wuerfel_Bezeichner" H 4900 6750 60  0001 C CNN
+F 2 "" H 4850 6350 60  0001 C CNN
+F 3 "" H 4850 6350 60  0001 C CNN
+	1    4850 6350
+	1    0    0    -1  
+$EndComp
+Text Notes 2850 6300 2    60   ~ 0
+ISP-Programmer
+Wire Notes Line
+	1650 6100 3400 6100
+Wire Notes Line
+	3400 6100 3400 7250
+Wire Notes Line
+	3400 7250 1650 7250
+Wire Notes Line
+	1650 7250 1650 6100
+$Comp
+L LED D7
+U 1 1 59FB746F
+P 6600 3350
+F 0 "D7" H 6600 3450 50  0000 C CNN
+F 1 "LED" H 6600 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6600 3350 50  0001 C CNN
+F 3 "" H 6600 3350 50  0001 C CNN
+	1    6600 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 59FB74BF
+P 6600 3000
+F 0 "R7" V 6680 3000 50  0000 C CNN
+F 1 "1k" V 6600 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6530 3000 50  0001 C CNN
+F 3 "" H 6600 3000 50  0001 C CNN
+	1    6600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3150 6600 3200
+Wire Wire Line
+	6600 3500 6600 3650
+$Comp
+L GND #PWR04
+U 1 1 59FB757E
+P 6600 3650
+F 0 "#PWR04" H 6600 3400 50  0001 C CNN
+F 1 "GND" H 6600 3500 50  0000 C CNN
+F 2 "" H 6600 3650 50  0001 C CNN
+F 3 "" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D6
+U 1 1 59FB764D
+P 7050 3350
+F 0 "D6" H 7050 3450 50  0000 C CNN
+F 1 "LED" H 7050 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 7050 3350 50  0001 C CNN
+F 3 "" H 7050 3350 50  0001 C CNN
+	1    7050 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59FB7653
+P 7050 3000
+F 0 "R6" V 7130 3000 50  0000 C CNN
+F 1 "1k" V 7050 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6980 3000 50  0001 C CNN
+F 3 "" H 7050 3000 50  0001 C CNN
+	1    7050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3150 7050 3200
+Wire Wire Line
+	7050 3500 7050 3650
+$Comp
+L GND #PWR05
+U 1 1 59FB765B
+P 7050 3650
+F 0 "#PWR05" H 7050 3400 50  0001 C CNN
+F 1 "GND" H 7050 3500 50  0000 C CNN
+F 2 "" H 7050 3650 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    7050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D5
+U 1 1 59FB76E1
+P 7450 3350
+F 0 "D5" H 7450 3450 50  0000 C CNN
+F 1 "LED" H 7450 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 7450 3350 50  0001 C CNN
+F 3 "" H 7450 3350 50  0001 C CNN
+	1    7450 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59FB76E7
+P 7450 3000
+F 0 "R5" V 7530 3000 50  0000 C CNN
+F 1 "1k" V 7450 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7380 3000 50  0001 C CNN
+F 3 "" H 7450 3000 50  0001 C CNN
+	1    7450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3150 7450 3200
+Wire Wire Line
+	7450 3500 7450 3650
+$Comp
+L GND #PWR06
+U 1 1 59FB76EF
+P 7450 3650
+F 0 "#PWR06" H 7450 3400 50  0001 C CNN
+F 1 "GND" H 7450 3500 50  0000 C CNN
+F 2 "" H 7450 3650 50  0001 C CNN
+F 3 "" H 7450 3650 50  0001 C CNN
+	1    7450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 59FB76F5
+P 7900 3350
+F 0 "D4" H 7900 3450 50  0000 C CNN
+F 1 "LED" H 7900 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 7900 3350 50  0001 C CNN
+F 3 "" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59FB76FB
+P 7900 3000
+F 0 "R4" V 7980 3000 50  0000 C CNN
+F 1 "1k" V 7900 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7830 3000 50  0001 C CNN
+F 3 "" H 7900 3000 50  0001 C CNN
+	1    7900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3150 7900 3200
+Wire Wire Line
+	7900 3500 7900 3650
+$Comp
+L GND #PWR07
+U 1 1 59FB7703
+P 7900 3650
+F 0 "#PWR07" H 7900 3400 50  0001 C CNN
+F 1 "GND" H 7900 3500 50  0000 C CNN
+F 2 "" H 7900 3650 50  0001 C CNN
+F 3 "" H 7900 3650 50  0001 C CNN
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 59FB7879
+P 8300 3350
+F 0 "D3" H 8300 3450 50  0000 C CNN
+F 1 "LED" H 8300 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 8300 3350 50  0001 C CNN
+F 3 "" H 8300 3350 50  0001 C CNN
+	1    8300 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 59FB787F
+P 8300 3000
+F 0 "R3" V 8380 3000 50  0000 C CNN
+F 1 "1k" V 8300 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8230 3000 50  0001 C CNN
+F 3 "" H 8300 3000 50  0001 C CNN
+	1    8300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3150 8300 3200
+Wire Wire Line
+	8300 3500 8300 3650
+$Comp
+L GND #PWR08
+U 1 1 59FB7887
+P 8300 3650
+F 0 "#PWR08" H 8300 3400 50  0001 C CNN
+F 1 "GND" H 8300 3500 50  0000 C CNN
+F 2 "" H 8300 3650 50  0001 C CNN
+F 3 "" H 8300 3650 50  0001 C CNN
+	1    8300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 59FB788D
+P 8700 3350
+F 0 "D2" H 8700 3450 50  0000 C CNN
+F 1 "LED" H 8700 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 8700 3350 50  0001 C CNN
+F 3 "" H 8700 3350 50  0001 C CNN
+	1    8700 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59FB7893
+P 8700 3000
+F 0 "R2" V 8780 3000 50  0000 C CNN
+F 1 "1k" V 8700 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8630 3000 50  0001 C CNN
+F 3 "" H 8700 3000 50  0001 C CNN
+	1    8700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3150 8700 3200
+Wire Wire Line
+	8700 3500 8700 3650
+$Comp
+L GND #PWR09
+U 1 1 59FB789B
+P 8700 3650
+F 0 "#PWR09" H 8700 3400 50  0001 C CNN
+F 1 "GND" H 8700 3500 50  0000 C CNN
+F 2 "" H 8700 3650 50  0001 C CNN
+F 3 "" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 59FB78A1
+P 9150 3350
+F 0 "D1" H 9150 3450 50  0000 C CNN
+F 1 "LED" H 9150 3250 50  0001 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9150 3350 50  0001 C CNN
+F 3 "" H 9150 3350 50  0001 C CNN
+	1    9150 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59FB78A7
+P 9150 3000
+F 0 "R1" V 9230 3000 50  0000 C CNN
+F 1 "1k" V 9150 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9080 3000 50  0001 C CNN
+F 3 "" H 9150 3000 50  0001 C CNN
+	1    9150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3150 9150 3200
+Wire Wire Line
+	9150 3500 9150 3650
+$Comp
+L GND #PWR010
+U 1 1 59FB78AF
+P 9150 3650
+F 0 "#PWR010" H 9150 3400 50  0001 C CNN
+F 1 "GND" H 9150 3500 50  0000 C CNN
+F 2 "" H 9150 3650 50  0001 C CNN
+F 3 "" H 9150 3650 50  0001 C CNN
+	1    9150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2400 9150 2400
+Wire Wire Line
+	9150 2400 9150 2850
+Wire Wire Line
+	5850 2500 8300 2500
+Wire Wire Line
+	8300 2500 8300 2850
+Wire Wire Line
+	7450 2600 7450 2850
+Wire Wire Line
+	5850 2600 7450 2600
+Wire Wire Line
+	5850 2700 6600 2700
+Wire Wire Line
+	6600 2700 6600 2850
+Wire Wire Line
+	7050 2850 7050 2600
+Connection ~ 7050 2600
+Wire Wire Line
+	7900 2850 7900 2500
+Connection ~ 7900 2500
+Wire Wire Line
+	8700 2850 8700 2400
+Connection ~ 8700 2400
+$Comp
+L ATTINY85-20PU U1
+U 1 1 59FBB286
+P 4500 2550
+F 0 "U1" H 3350 2950 50  0000 C CNN
+F 1 "ATTINY85-20PU" H 5500 2150 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 5500 2550 50  0001 C CIN
+F 3 "" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2800 2950 2800
+Wire Wire Line
+	2950 2800 2950 3050
+$Comp
+L C C1
+U 1 1 59FBCA32
+P 2550 2700
+F 0 "C1" H 2575 2800 50  0000 L CNN
+F 1 "100nF" H 2575 2600 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 2588 2550 50  0001 C CNN
+F 3 "" H 2550 2700 50  0001 C CNN
+	1    2550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2050 2550 2550
+Connection ~ 2550 2300
+$Comp
+L GND #PWR011
+U 1 1 59FBCB13
+P 2550 3050
+F 0 "#PWR011" H 2550 2800 50  0001 C CNN
+F 1 "GND" H 2550 2900 50  0000 C CNN
+F 2 "" H 2550 3050 50  0001 C CNN
+F 3 "" H 2550 3050 50  0001 C CNN
+	1    2550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2850 2550 3050
+Wire Wire Line
+	6350 2100 6350 2500
+Connection ~ 6350 2500
+Wire Wire Line
+	6200 1950 6200 2400
+Connection ~ 6200 2400
+Wire Wire Line
+	5850 2300 6050 2300
+Wire Wire Line
+	6050 1800 6050 4350
+Text GLabel 2550 2050 1    60   Input ~ 0
+VCC
+$Comp
+L SW_Push_Dual SW1
+U 1 1 59FBE819
+P 6450 4150
+F 0 "SW1" H 6500 4250 50  0000 L CNN
+F 1 "SW_Push_Dual" H 6450 3880 50  0000 C CNN
+F 2 "user_buttons:SW_TH_Tactile_Omron_B3F-10xx" H 6450 4350 50  0001 C CNN
+F 3 "" H 6450 4350 50  0001 C CNN
+	1    6450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59FBE8A7
+P 6900 4600
+F 0 "#PWR012" H 6900 4350 50  0001 C CNN
+F 1 "GND" H 6900 4450 50  0000 C CNN
+F 2 "" H 6900 4600 50  0001 C CNN
+F 3 "" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4150 6900 4150
+Wire Wire Line
+	6900 4150 6900 4600
+Wire Wire Line
+	6650 4350 6900 4350
+Connection ~ 6900 4350
+Wire Wire Line
+	6050 4350 6250 4350
+Wire Wire Line
+	6250 4150 6050 4150
+Connection ~ 6050 4150
+Connection ~ 6050 2300
+Text Notes 7450 6200 0    60   ~ 0
+Copyright Caroline Brix 2017.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable\nconditions
+Wire Notes Line
+	7400 5300 11100 5300
+Wire Notes Line
+	11100 5300 11100 6250
+Wire Notes Line
+	11100 6250 7400 6250
+Wire Notes Line
+	7400 6250 7400 5300
+$EndSCHEMATC
